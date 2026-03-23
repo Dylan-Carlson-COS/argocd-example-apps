@@ -18,7 +18,8 @@ spec:
         seccompProfile:
           type: RuntimeDefault
       containers:
-        - image: gcr.io/google-samples/gb-frontend:v5
+        # - image: gcr.io/google-samples/gb-frontend:v5
+        - image: us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5
           name: guestbook-ui
           ports:
             - containerPort: 80
