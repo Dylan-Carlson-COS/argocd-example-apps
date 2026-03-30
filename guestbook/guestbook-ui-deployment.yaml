@@ -19,10 +19,10 @@ spec:
           type: RuntimeDefault
       containers:
         # - image: gcr.io/google-samples/gb-frontend:v5
-        - image: us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5
+        - image: ginxinc/nginx-unprivileged
           name: guestbook-ui
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           securityContext:
             allowPrivilegeEscalation: false
             runAsNonRoot: true
