@@ -18,7 +18,6 @@ spec:
         seccompProfile:
           type: RuntimeDefault
       containers:
-        # - image: gcr.io/google-samples/gb-frontend:v5
         - image: nginxinc/nginx-unprivileged
           name: guestbook-ui
           ports:
